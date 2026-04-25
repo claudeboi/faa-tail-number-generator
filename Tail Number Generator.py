@@ -9,7 +9,7 @@ LETTER_OR_NUMBER = .2621 # default .2621
 
 def validateLetter(asciiNumber): # regenerate letter if "I" or "O" is chosen
     if asciiNumber < 65 or asciiNumber > 90:
-        return print("Invalid letter passed to validation")
+        return print("Invalid ascii index passed to validation")
     while asciiNumber == 73 or asciiNumber == 79:
         asciiNumber = random.randint(65, 90)
     return str(chr(asciiNumber))
@@ -64,7 +64,7 @@ def returnLetterOrNumber(chosenPercent):
         return validateLetter(random.randint(65,90))
 
 # Generate each individual tail number
-def generateIndividualTailNumber(length):
+def generateEachTailNumber(length):
     match length:
         case 1:
             return str("N" + str(random.randint(1,9)))
@@ -106,7 +106,7 @@ def generateTailNumberList(minLen, maxLen, listLength):
         minLen, maxLen = maxLen, minLen
         print("Minimum and maximum switched\n")
     for x in range(0, listLength):
-        currentTailNumber = generateIndividualTailNumber(determineLengthOfNextTailNumber(minLen, maxLen))
+        currentTailNumber = generateEachTailNumber(determineLengthOfNextTailNumber(minLen, maxLen))
         print(str(x + 1) + ": " + str(currentTailNumber))
         
 while True:
@@ -114,7 +114,7 @@ while True:
     maximumTailNumberLength = int(input("What should the maximum tail number length be?\n"))
     numTailNumbersGenerated = int(input("How many tail numbers should be generated?\n")) 
     generateTailNumberList(minimumTailNumberLength, maximumTailNumberLength, numTailNumbersGenerated)
-    userWantsToContinue = str(input("\nGenerate more tail numbers? y/n\n"))
+    userWantsToContinue = str(input("\nGenerate more tail numbers? (y/n)\n"))
     if userWantsToContinue != "y":
         break
     else:
