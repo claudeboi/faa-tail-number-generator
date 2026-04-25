@@ -13,4 +13,8 @@ My personal preference is TWO_LETTERS_CHANCE around .7 and LETTER_OR_NUMBER arou
 
 Blame ChatGPT if the default %s are wrong, I ain't doing all that math by hand. (For the record, no other generative AI was used in the making of this script. I write dogshit code for the love of the game).
 
+Python >=3.10.0 required due to use of switch statements.
+If you don't know how to use Python, many interpreters are available online behind a google search such as "online python interpreter".
+Just copy/paste the conents of "Tail Number Generator.py" into them and run.
+
 There are probably bugs. Let me know if you run into any unexpected behavior.
