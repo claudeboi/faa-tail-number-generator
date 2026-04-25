@@ -118,4 +118,4 @@ while True:
     if userWantsToContinue != "y":
         break
     else:
-        print("\n")
+        print("")
