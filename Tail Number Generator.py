@@ -115,7 +115,7 @@ while True:
     numTailNumbersGenerated = int(input("How many tail numbers should be generated?\n")) 
     generateTailNumberList(minimumTailNumberLength, maximumTailNumberLength, numTailNumbersGenerated)
     userWantsToContinue = str(input("\nGenerate more tail numbers? (y/n)\n"))
-    if userWantsToContinue != "y":
+    if userWantsToContinue != "y" and userWantsToContinue != "Y":
         break
     else:
         print("")
