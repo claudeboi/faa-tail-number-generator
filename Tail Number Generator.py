@@ -89,7 +89,7 @@ def generateEachTailNumber(length):
             else:
                 return str("N" + str(random.randint(100,999)) + validateLetter(random.randint(65,90)) + validateLetter(random.randint(65,90)))
         case _:
-            "Invalid length passed to function"
+            return print("Invalid length passed to function")
                 
             
 # Generate list of tail numbers, output to terminal
