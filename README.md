@@ -13,4 +13,4 @@ My personal preference is TWO_LETTERS_CHANCE around .7 and LETTER_OR_NUMBER arou
 
 Blame ChatGPT if the default %s are wrong, I ain't doing all that math by hand. (For the record, no other generative AI was used in the making of this script. I write dogshit code for the love of the game.)
 
-There are probably bugs. Let me (discord: claudeboi) know if you run into any unexpected behavior.
+There are probably bugs. Let me know if you run into any unexpected behavior.
